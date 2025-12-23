@@ -235,15 +235,6 @@ export function Home() {
                 ease: [0.34, 1.56, 0.64, 1]
               }}
             >
-              {/* Decorative elements */}
-              <div className="absolute -top-6 right-10 md:right-20">
-                <span className="text-5xl text-[#e70059]">●</span>
-              </div>
-              
-              <div className="text-right mb-4 text-xs tracking-wider">
-                CREATIVE
-              </div>
-              
               <h2 className="text-[12vw] md:text-[10vw] lg:text-[8rem] tracking-tighter leading-[0.85] uppercase mb-6" 
                   style={{ fontFamily: "'GenEi Kiwami Gothic', -apple-system, sans-serif" }}>
                 <span className="block text-black">わたしは</span>

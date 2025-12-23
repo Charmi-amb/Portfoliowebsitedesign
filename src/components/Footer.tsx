@@ -1,39 +1,40 @@
 import logoCharmi from "figma:asset/e40355430d1af86a27144cc251a63b63ea2b6804.png";
 import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#e70059] text-white py-6 md:py-8">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-2 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Contenido principal - Logo y texto en extremos */}
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-4 gap-1 md:gap-0">
             {/* Logo a la izquierda */}
-            <div className="flex items-center justify-start">
+            <div className="flex items-center justify-start flex-shrink-0">
               <img 
                 src={logoCharmi} 
                 alt="Charmi Logo" 
-                className="h-16 md:h-24 w-auto"
+                className="h-14 md:h-24 w-auto"
               />
             </div>
 
             {/* Iconos de redes sociales en el centro */}
-            <div className="flex items-center justify-center gap-3 md:gap-6 flex-1">
+            <div className="flex items-center justify-center gap-2 md:gap-6 flex-shrink-0">
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200 flex items-center justify-center"
               >
-                <Instagram className="w-5 h-5 md:w-6 md:h-6" />
+                <Instagram className="w-4 h-4 md:w-6 md:h-6" />
               </a>
               <a 
                 href="mailto:tu-email@gmail.com" 
                 className="hover:scale-110 transition-transform duration-200 flex items-center justify-center"
               >
-                <Mail className="w-5 h-5 md:w-6 md:h-6" />
+                <Mail className="w-4 h-4 md:w-6 md:h-6" />
               </a>
               <a 
                 href="https://linkedin.com" 
@@ -41,15 +42,15 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-200 flex items-center justify-center"
               >
-                <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
+                <Linkedin className="w-4 h-4 md:w-6 md:h-6" />
               </a>
             </div>
 
-            {/* Texto a la derecha - Oculto en móvil */}
-            <div className="hidden md:flex items-center justify-end gap-2 text-xs text-white/80">
-              <span className="font-mono tracking-[0.2em]">デザイナー</span>
-              <span className="text-white/50">✕</span>
-              <span className="font-mono tracking-[0.2em]">DESIGNER</span>
+            {/* Texto a la derecha */}
+            <div className="flex items-center justify-end gap-1 md:gap-2 text-[7px] md:text-xs text-white/80 flex-shrink-0">
+              <span className="font-mono tracking-tight md:tracking-[0.2em]">デザイナー</span>
+              <span className="text-white/50 hidden sm:inline">✕</span>
+              <span className="hidden sm:inline font-mono tracking-tight md:tracking-[0.2em]">DESIGNER</span>
             </div>
           </div>
 
@@ -65,19 +66,19 @@ export function Footer() {
               
               {/* Enlaces legales */}
               <div className="flex items-center gap-3 md:gap-4">
-                <a 
-                  href="/privacy-policy" 
+                <Link 
+                  to="/privacy-policy" 
                   className="font-mono hover:text-white transition-colors duration-200"
                 >
                   PRIVACY POLICY
-                </a>
+                </Link>
                 <span className="text-white/40">✕</span>
-                <a 
-                  href="/cookies" 
+                <Link 
+                  to="/cookies" 
                   className="font-mono hover:text-white transition-colors duration-200"
                 >
                   COOKIES
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -6,6 +6,8 @@ import { PageTransition } from "./components/PageTransition";
 import { Home } from "./pages/Home";
 import { Portfolio } from "./pages/Portfolio";
 import { Contact } from "./pages/Contact";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { Cookies } from "./pages/Cookies";
 import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/cookies" element={<Cookies />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </PageTransition>
