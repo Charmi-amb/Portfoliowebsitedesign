@@ -1,9 +1,10 @@
 import logoCharmi from "figma:asset/e40355430d1af86a27144cc251a63b63ea2b6804.png";
 import { Instagram, Linkedin, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
 
   return (
     <footer className="bg-[#e70059] text-white py-6 md:py-8">
@@ -30,12 +31,12 @@ export function Footer() {
               >
                 <Instagram className="w-4 h-4 md:w-6 md:h-6" />
               </a>
-              <a 
-                href="mailto:tu-email@gmail.com" 
+              <button
+                onClick={() => navigate("/contact?mensaje=true")}
                 className="hover:scale-110 transition-transform duration-200 flex items-center justify-center"
               >
                 <Mail className="w-4 h-4 md:w-6 md:h-6" />
-              </a>
+              </button>
               <a 
                 href="https://linkedin.com" 
                 target="_blank" 

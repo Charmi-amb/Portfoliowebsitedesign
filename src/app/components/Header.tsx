@@ -15,7 +15,7 @@ export function Header() {
               ? 'text-white md:text-black hover:text-white/80 md:hover:text-black/70'
               : 'text-white md:text-[#e70059] hover:text-white/80 md:hover:text-[#b00045]'
           }`}
-          style={{ fontFamily: "'GenEi Kiwami Gothic', sans-serif" }}
+          style={{ fontFamily: "'GenEi Kiwami Gothic', 'M PLUS 1p', sans-serif", fontWeight: 900 }}
         >
           <motion.span
             className="inline-block"
@@ -52,7 +52,7 @@ export function Header() {
               ? 'text-white md:text-black hover:text-white/80 md:hover:text-black/70'
               : 'text-white md:text-[#e70059] hover:text-white/80 md:hover:text-[#b00045]'
           }`}
-          style={{ fontFamily: "'GenEi Kiwami Gothic', sans-serif" }}
+          style={{ fontFamily: "'GenEi Kiwami Gothic', 'M PLUS 1p', sans-serif", fontWeight: 900 }}
         >
           <motion.span
             className="inline-block"
@@ -89,7 +89,7 @@ export function Header() {
               ? 'text-white md:text-black hover:text-white/80 md:hover:text-black/70'
               : 'text-white md:text-[#e70059] hover:text-white/80 md:hover:text-[#b00045]'
           }`}
-          style={{ fontFamily: "'GenEi Kiwami Gothic', sans-serif" }}
+          style={{ fontFamily: "'GenEi Kiwami Gothic', 'M PLUS 1p', sans-serif", fontWeight: 900 }}
         >
           <motion.span
             className="inline-block"

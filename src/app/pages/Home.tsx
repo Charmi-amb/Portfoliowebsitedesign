@@ -236,7 +236,7 @@ export function Home() {
               }}
             >
               <h2 className="text-[12vw] md:text-[10vw] lg:text-[8rem] tracking-tighter leading-[0.85] uppercase mb-6" 
-                  style={{ fontFamily: "'GenEi Kiwami Gothic', -apple-system, sans-serif" }}>
+                  style={{ fontFamily: "'GenEi Kiwami Gothic', 'M PLUS 1p', sans-serif", fontWeight: 900 }}>
                 <span className="block text-black">わたしは</span>
                 <span className="block text-[#e70059] relative">
                   Alejandro
@@ -374,7 +374,7 @@ export function Home() {
 
       {/* Values Section - Dark Poster Style */}
       <motion.section 
-        className="min-h-screen py-20 md:py-32 pb-64 md:pb-96 bg-black text-white relative overflow-hidden flex items-center"
+        className="min-h-screen py-20 md:py-32 pb-20 md:pb-32 bg-black text-white relative overflow-hidden flex items-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, margin: "-100px" }}
@@ -409,7 +409,7 @@ export function Home() {
               </div>
               
               <h2 className="text-5xl md:text-7xl lg:text-8xl mb-4 tracking-tighter uppercase" 
-                  style={{ fontFamily: "'GenEi Kiwami Gothic', -apple-system, sans-serif" }}>
+                  style={{ fontFamily: "'GenEi Kiwami Gothic', 'M PLUS 1p', sans-serif", fontWeight: 900 }}>
                 MY <span className="text-[#e70059]">SKILLS</span>
               </h2>
             </div>
