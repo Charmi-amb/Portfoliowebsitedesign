@@ -47,7 +47,7 @@ export default defineConfig({
     // Figma Make vuelve a sincronizar imágenes pesadas sin comprimir, se
     // optimizan solas al publicar.
     ViteImageOptimizer({
-      png: { quality: 80 },
+      png: { quality: 80, compressionLevel: 9, palette: true },
       jpeg: { quality: 78 },
       jpg: { quality: 78 },
       webp: { quality: 80 },
