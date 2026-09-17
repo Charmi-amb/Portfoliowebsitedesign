@@ -36,7 +36,7 @@ export function Cookies() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-4 text-white/60 text-sm"
             >
-              Última actualización: Diciembre 2024
+              Última actualización: Septiembre 2026
             </motion.div>
           </div>
         </div>
@@ -50,16 +50,6 @@ export function Cookies() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          {/* Introducción */}
-          <section className="mb-12">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en este sitio web, y cómo puedes gestionarlas.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              Al utilizar nuestro sitio web, aceptas el uso de cookies de acuerdo con esta política.
-            </p>
-          </section>
-
           {/* Sección 1 */}
           <section className="mb-10 border-l-2 border-[#e70059] pl-6">
             <div className="flex items-center gap-3 mb-4">
@@ -67,7 +57,7 @@ export function Cookies() {
               <h2 className="tracking-wide">¿QUÉ SON LAS COOKIES?</h2>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Se utilizan para hacer que los sitios web funcionen de manera más eficiente, mejorar la experiencia del usuario y proporcionar información a los propietarios del sitio.
+              Las cookies son pequeños archivos que un sitio web puede instalar en tu ordenador o dispositivo móvil al navegar por él. Permiten, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario.
             </p>
           </section>
 
@@ -75,21 +65,12 @@ export function Cookies() {
           <section className="mb-10 border-l-2 border-[#e70059] pl-6">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-[#e70059] text-xs">02</span>
-              <h2 className="tracking-wide">TIPOS DE COOKIES QUE UTILIZAMOS</h2>
+              <h2 className="tracking-wide">¿QUÉ COOKIES UTILIZA ESTA WEB?</h2>
             </div>
-            <div className="space-y-6 text-gray-700">
-              <div>
-                <h3 className="font-semibold mb-2 text-black">Cookies Estrictamente Necesarias</h3>
-                <p>Son esenciales para que el sitio web funcione correctamente. Permiten la navegación básica y el acceso a áreas seguras. Sin estas cookies, el sitio no puede funcionar adecuadamente.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2 text-black">Cookies de Rendimiento</h3>
-                <p>Recopilan información sobre cómo los visitantes utilizan el sitio web, como qué páginas son las más visitadas. Toda la información que recopilan estas cookies es anónima y se utiliza solo para mejorar el funcionamiento del sitio.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2 text-black">Cookies de Funcionalidad</h3>
-                <p>Permiten que el sitio web recuerde las elecciones que haces (como tu idioma o región) y proporcionan características mejoradas y más personales.</p>
-              </div>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>Este sitio web <strong>(charmi-amb.es)</strong> es una web de portfolio personal y no utiliza cookies de análisis, publicidad o seguimiento de terceros.</p>
+              <p>No instalamos cookies propias que requieran tu consentimiento previo.</p>
+              <p>Es posible que se carguen recursos externos (como tipografías de Google Fonts) necesarios para el correcto funcionamiento visual de la web. Estos servicios pueden recibir tu dirección IP como parte del funcionamiento técnico habitual de internet, pero no instalan cookies de seguimiento.</p>
             </div>
           </section>
 
@@ -97,66 +78,38 @@ export function Cookies() {
           <section className="mb-10 border-l-2 border-[#e70059] pl-6">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-[#e70059] text-xs">03</span>
-              <h2 className="tracking-wide">COOKIES DE TERCEROS</h2>
+              <h2 className="tracking-wide">FORMULARIO DE CONTACTO</h2>
             </div>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              Algunos servicios externos que utilizamos pueden establecer sus propias cookies:
+            <p className="text-gray-700 leading-relaxed">
+              Si utilizas el formulario de contacto de esta web, los datos que introduzcas (nombre, email, mensaje) se envían a través del servicio <strong>EmailJS</strong> para poder responderte, y no se almacenan con fines de publicidad ni se comparten con terceros ajenos a este propósito.
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-4 text-gray-700">
-              <li><strong>Google Analytics:</strong> Para analizar el uso del sitio web y mejorar la experiencia del usuario</li>
-              <li><strong>Servicios de redes sociales:</strong> Si compartes contenido en redes sociales</li>
-            </ul>
           </section>
 
           {/* Sección 4 */}
           <section className="mb-10 border-l-2 border-[#e70059] pl-6">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-[#e70059] text-xs">04</span>
-              <h2 className="tracking-wide">CÓMO GESTIONAR LAS COOKIES</h2>
+              <h2 className="tracking-wide">CÓMO DESACTIVAR LAS COOKIES</h2>
             </div>
             <div className="space-y-3 text-gray-700">
-              <p>Puedes controlar y/o eliminar las cookies como desees. Puedes eliminar todas las cookies que ya están en tu dispositivo y puedes configurar la mayoría de los navegadores para evitar que se coloquen.</p>
-              <p className="mt-4"><strong>Configuración por navegador:</strong></p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
+              <p>Aunque esta web no instala cookies de seguimiento, puedes configurar tu navegador para bloquear o eliminar cualquier cookie en general:</p>
+              <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li><strong>Chrome:</strong> Configuración &gt; Privacidad y seguridad &gt; Cookies</li>
-                <li><strong>Firefox:</strong> Opciones &gt; Privacidad y seguridad</li>
+                <li><strong>Firefox:</strong> Ajustes &gt; Privacidad y seguridad</li>
                 <li><strong>Safari:</strong> Preferencias &gt; Privacidad</li>
-                <li><strong>Edge:</strong> Configuración &gt; Privacidad, búsqueda y servicios</li>
+                <li><strong>Edge:</strong> Configuración &gt; Cookies y permisos del sitio</li>
               </ul>
-              <p className="mt-4 text-sm italic">
-                Ten en cuenta que si decides bloquear las cookies, algunas funciones del sitio web pueden no funcionar correctamente.
-              </p>
             </div>
           </section>
 
-          {/* Sección 5 */}
-          <section className="mb-10 border-l-2 border-[#e70059] pl-6">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-[#e70059] text-xs">05</span>
-              <h2 className="tracking-wide">DURACIÓN DE LAS COOKIES</h2>
-            </div>
-            <div className="space-y-3 text-gray-700">
-              <p><strong>Cookies de sesión:</strong> Se eliminan automáticamente cuando cierras el navegador.</p>
-              <p><strong>Cookies persistentes:</strong> Permanecen en tu dispositivo durante un período de tiempo específico o hasta que las elimines manualmente.</p>
-            </div>
-          </section>
-
-          {/* Sección 6 */}
-          <section className="mb-12 border-l-2 border-[#e70059] pl-6">
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-[#e70059] text-xs">06</span>
-              <h2 className="tracking-wide">ACTUALIZACIONES DE ESTA POLÍTICA</h2>
-            </div>
-            <p className="text-gray-700 leading-relaxed">
-              Podemos actualizar esta Política de Cookies periódicamente para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o reglamentarias. Te recomendamos revisar esta página regularmente para estar informado sobre cómo utilizamos las cookies.
-            </p>
-          </section>
-
-          {/* Contacto */}
+          {/* Sección 5 — Contacto */}
           <section className="mb-12 bg-gray-50 p-6 border-l-4 border-[#e70059]">
-            <h3 className="tracking-wide mb-3">CONTACTO</h3>
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-[#e70059] text-xs">05</span>
+              <h3 className="tracking-wide">CONTACTO</h3>
+            </div>
             <p className="text-gray-700 leading-relaxed">
-              Si tienes preguntas sobre nuestra Política de Cookies, puedes contactarnos a través del formulario de contacto o enviando un correo electrónico a: <span className="text-[#e70059]">tu-email@gmail.com</span>
+              Si tienes cualquier duda sobre esta política, puedes escribirnos a: <span className="text-[#e70059]">amb.charmi@gmail.com</span>
             </p>
           </section>
 

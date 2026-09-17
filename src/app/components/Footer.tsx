@@ -74,11 +74,18 @@ export function Footer() {
                   PRIVACY POLICY
                 </Link>
                 <span className="text-white/40">✕</span>
-                <Link 
-                  to="/cookies" 
+                <Link
+                  to="/cookies"
                   className="font-mono hover:text-white transition-colors duration-200"
                 >
                   COOKIES
+                </Link>
+                <span className="text-white/40">✕</span>
+                <Link
+                  to="/legal-notice"
+                  className="font-mono hover:text-white transition-colors duration-200"
+                >
+                  LEGAL NOTICE
                 </Link>
               </div>
             </div>

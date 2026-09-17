@@ -8,6 +8,7 @@ import { Portfolio } from "./pages/Portfolio";
 import { Contact } from "./pages/Contact";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Cookies } from "./pages/Cookies";
+import { LegalNotice } from "./pages/LegalNotice";
 import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/cookies" element={<Cookies />} />
+              <Route path="/legal-notice" element={<LegalNotice />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </PageTransition>
