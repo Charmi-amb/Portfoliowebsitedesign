@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 
 function figmaAssetResolver() {
@@ -41,6 +42,16 @@ export default defineConfig({
     // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    // Comprime automáticamente las imágenes en cada build, sin tocar los
+    // archivos originales en src/assets ni las rutas de import. Así, si
+    // Figma Make vuelve a sincronizar imágenes pesadas sin comprimir, se
+    // optimizan solas al publicar.
+    ViteImageOptimizer({
+      png: { quality: 80, compressionLevel: 9, palette: true },
+      jpeg: { quality: 78 },
+      jpg: { quality: 78 },
+      webp: { quality: 80 },
+    }),
   ],
   resolve: {
     alias: {
