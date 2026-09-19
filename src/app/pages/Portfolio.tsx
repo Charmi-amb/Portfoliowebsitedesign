@@ -49,6 +49,28 @@ import alkawn4Img from "figma:asset/f1f9ab05e5de6f022b3d947a79e8e16a0d960214.png
 import alkawn5Img from "figma:asset/491558a66ba4d1a3bf64d2007080c7e0d25c25b9.png";
 import alkawn6Img from "figma:asset/396082992c9e80c806c080f0af1d0905066dc63a.png";
 import erGatoImg from "../../imports/ErGato_shadowless.png";
+import lockedEstanteriaImg from "../../imports/Mesa_de_trabajo_1Estanteria.jpg";
+import lockedPuertaImg from "../../imports/Puerta_base___tintas_planas___textura.jpg";
+import lockedEjemploImg from "../../imports/Ejemplo_objeto_en_pared_escritorio.jpg";
+import lockedCamaImg from "../../imports/Mesa_de_trabajo_3camaa.jpg";
+import omnimonImg from "../../imports/Omnimon.jpg";
+import disenos3dPokeballImg from "../../imports/Pokeball.jpg";
+import disenos3dDragonImg from "../../imports/Metal_Dragon.jpg";
+import disenos3dCeramicImg from "../../imports/ceramic.jpg";
+import disenos3dChainChompImg from "../../imports/Chain_Chomp.jpg";
+import disenos3dChainsawImg from "../../imports/Chainsaw.jpg";
+import disenos3dGalaxyImg from "../../imports/Galaxy_Star.jpg";
+import disenos3dIsoRoomImg from "../../imports/IsoRoom.jpg";
+import disenos3dScizorImg from "../../imports/Scizor.jpg";
+import ilustStellaImg from "../../imports/STELLA.jpg";
+import ilustLaminas1Img from "../../imports/Laminas_1.jpg";
+import ilustLaminas2Img from "../../imports/Laminas_2.jpg";
+import ilustLaminas3Img from "../../imports/Laminas_3.jpg";
+import ilustMadaleneImg from "../../imports/Madalene.jpg";
+import ilustMortimerImg from "../../imports/Mortimer.jpg";
+import ilustSilu1Img from "../../imports/Silu_1.png";
+import ilustSilu2Img from "../../imports/Silu_2.jpg";
+import ilustSilu5Img from "../../imports/Silu_5.jpg";
 import alkawn7Img from "figma:asset/177f2d3fad8121cee5d9b92cf896ab4219366141.png";
 import alkawn8Img from "figma:asset/3831ad25f6e4c15e8aeb94ec99701998af102737.png";
 import alkawnResultImg from "figma:asset/238084d6c14943c4c883d649846830d34bf2310b.png";
@@ -355,7 +377,11 @@ const projects: Project[] = [
     tools: ["Clip Studio Paint", "Adobe Photoshop", "Game Maker"],
     details: "Concepto y desarrollo de una demo técnica de un videojuego corto. Es tipo point and click, con estética 2D y puzles, parecido a un escape room con alguna que otra mecánica extra.",
     galleryImages: [
-      lockedImg
+      lockedImg,
+      lockedEstanteriaImg,
+      lockedPuertaImg,
+      lockedEjemploImg,
+      lockedCamaImg
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
   },
@@ -364,14 +390,22 @@ const projects: Project[] = [
     title: "Ilustraciones",
     category: "Ilustración",
     categories: ["Ilustración"],
-    image: lockedImg,
+    image: ilustSilu1Img,
     year: "2020/2026",
     client: "Proyecto Personal",
     role: "Diseñador Gráfico",
     tools: ["Clip Studio Paint"],
     details: "Ilustraciones más relevantes y llamativas personales a lo largo de mis estudios y mi tiempo libre.",
     galleryImages: [
-      lockedImg
+      ilustMortimerImg,
+      ilustLaminas1Img,
+      ilustLaminas2Img,
+      ilustLaminas3Img,
+      ilustMadaleneImg,
+      ilustStellaImg,
+      ilustSilu1Img,
+      ilustSilu2Img,
+      ilustSilu5Img
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
   },
@@ -380,14 +414,21 @@ const projects: Project[] = [
     title: "Diseños 3D",
     category: "Diseño 3D",
     categories: ["Diseño 3D"],
-    image: lockedImg,
+    image: disenos3dPokeballImg,
     year: "2020/2022",
     client: "Proyecto Personal",
     role: "Diseñador Gráfico",
     tools: ["Blender"],
     details: "Modelos personales más relevantes construídos en Blender a lo largo de mis estudios en la materia de diseño 3D y mi tiempo libre.",
     galleryImages: [
-      lockedImg
+      disenos3dPokeballImg,
+      disenos3dDragonImg,
+      disenos3dCeramicImg,
+      disenos3dChainChompImg,
+      disenos3dChainsawImg,
+      disenos3dGalaxyImg,
+      disenos3dIsoRoomImg,
+      disenos3dScizorImg
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
   },
@@ -396,14 +437,14 @@ const projects: Project[] = [
     title: "Omnimon",
     category: "Diseño 3D",
     categories: ["Diseño 3D"],
-    image: lockedImg,
+    image: omnimonImg,
     year: "2023",
     client: "Proyecto Personal",
     role: "Diseñador Gráfico",
     tools: ["Blender"],
     details: "Modelo 3D del digimón Omnimon. Trabajo personal construído en Blender con blocking.",
     galleryImages: [
-      lockedImg
+      omnimonImg
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
   },
@@ -776,11 +817,11 @@ export function Portfolio() {
                         />
                       </div>
                     ) : (
-                      <div className={`img-protect-wrap w-full h-full ${project.id === 10 ? 'bg-[#020000] flex items-center justify-center' : ''}`}>
+                      <div className={`img-protect-wrap w-full h-full ${project.id === 10 ? 'bg-[#020000] flex items-center justify-center' : project.id === 14 ? 'bg-white flex items-center justify-center' : ''}`}>
                         <ImageWithFallback
                           src={project.image}
                           alt={project.title}
-                          className={`protected ${project.id === 10 ? 'w-[60%] h-auto object-contain' : 'w-full h-full object-cover'} group-hover:scale-110 transition-transform duration-700`}
+                          className={`protected ${project.id === 10 ? 'w-[60%] h-auto object-contain' : project.id === 14 ? 'max-w-full max-h-full w-auto h-auto object-contain group-hover:scale-110 transition-transform duration-700' : 'w-full h-full object-cover'} group-hover:scale-110 transition-transform duration-700`}
                           style={project.id === 5 ? { objectPosition: 'left center' } : undefined}
                         />
                       </div>
@@ -925,8 +966,10 @@ export function Portfolio() {
                     ? 'aspect-auto py-12 md:py-16 bg-[#020000] flex items-center justify-center'
                     : selectedProject.id === 12
                     ? 'aspect-auto pb-8 md:pb-12 bg-white'
-                    : selectedProject.galleryImages && selectedProject.galleryImages.length === 1 
-                    ? 'aspect-auto pb-8 md:pb-12 bg-white' 
+                    : selectedProject.id === 14
+                    ? 'aspect-video md:aspect-[21/9] bg-white flex items-center justify-center'
+                    : selectedProject.galleryImages && selectedProject.galleryImages.length === 1
+                    ? 'aspect-auto pb-8 md:pb-12 bg-white'
                     : selectedProject.id === 4
                     ? 'aspect-auto bg-gray-100'
                     : selectedProject.id === 5
@@ -959,6 +1002,8 @@ export function Portfolio() {
                             ? 'w-full max-w-[40%] h-auto object-contain'
                             : selectedProject.id === 12
                             ? 'w-full h-auto object-contain'
+                            : selectedProject.id === 14
+                            ? 'w-full h-full object-contain'
                             : selectedProject.galleryImages && selectedProject.galleryImages.length === 1 && selectedProject.id !== 5
                             ? 'w-full h-auto object-contain'
                             : selectedProject.id === 4
