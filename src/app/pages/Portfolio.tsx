@@ -71,6 +71,12 @@ import ilustMortimerImg from "../../imports/Mortimer.jpg";
 import ilustSilu1Img from "../../imports/Silu_1.png";
 import ilustSilu2Img from "../../imports/Silu_2.jpg";
 import ilustSilu5Img from "../../imports/Silu_5.jpg";
+import ilustSilu6Img from "../../imports/Silu_6.jpg";
+import ilustSilu7Img from "../../imports/Silu_7.jpg";
+import ilustChami from "../../imports/Cha'mi.jpg";
+import ilustCharmi from "../../imports/CHARMI.jpg";
+import ilustLaharl from "../../imports/Laharl.jpg";
+import ilustMortimerHatDraw from "../../imports/Mortimer Hat_draw.jpg";
 import alkawn7Img from "figma:asset/177f2d3fad8121cee5d9b92cf896ab4219366141.png";
 import alkawn8Img from "figma:asset/3831ad25f6e4c15e8aeb94ec99701998af102737.png";
 import alkawnResultImg from "figma:asset/238084d6c14943c4c883d649846830d34bf2310b.png";
@@ -405,7 +411,13 @@ const projects: Project[] = [
       ilustStellaImg,
       ilustSilu1Img,
       ilustSilu2Img,
-      ilustSilu5Img
+      ilustSilu5Img,
+      ilustSilu6Img,
+      ilustSilu7Img,
+      ilustChami,
+      ilustCharmi,
+      ilustLaharl,
+      ilustMortimerHatDraw
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
   },
