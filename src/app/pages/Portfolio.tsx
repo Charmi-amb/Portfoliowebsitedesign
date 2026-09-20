@@ -957,7 +957,7 @@ export function Portfolio() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 md:top-6 md:right-6 z-10 text-[#e70059] transition-all"
+                className="absolute top-4 right-4 md:top-6 md:right-6 z-20 text-[#e70059] transition-all"
               >
                 <motion.div
                   whileHover={{ rotate: 90 }}
