@@ -91,6 +91,11 @@ import safar4Img from "figma:asset/82fc200c5b62619489ec92b1e6ebf0d7b4bbc745.png"
 import safar5Img from "figma:asset/c77b1428b23447ec00ffe2cac1481a45f024da21.png";
 import safar6Img from "figma:asset/aa6bd75487079bd0d61f88817f0fa76bf546eed6.png";
 import safar7Img from "figma:asset/4ad7ab92c922e6acc4314f1faf09d3e36fcc3a64.png";
+import portfolioWebImg from "figma:asset/e60d2b83fd6a8e4022f566e8943fc69bfa26c445.png";
+import conceptPortadaImg from "figma:asset/upscalemedia-transformed.jpg";
+import conceptImg1 from "figma:asset/upscalemedia-transformed (1).jpg";
+import conceptImg2 from "figma:asset/upscalemedia-transformed (2).jpg";
+import conceptImg3 from "figma:asset/DSC_0466.jpg";
 // Imagen horizontal interior - REBAJAS a la izquierda, persona a la derecha
 import generalGaleriasInteriorImg from "figma:asset/60531b3b7486a73229b17e01b9a4ede1c4b36f59.png";
 // Imagen cuadrada exterior - persona con globo + logo Nevada Shopping
@@ -465,16 +470,36 @@ const projects: Project[] = [
     title: "Ilustraciones para Portfolio Web",
     category: "Ilustración",
     categories: ["Ilustración"],
-    image: lockedImg,
+    image: portfolioWebImg,
     year: "2026",
     client: "Proyecto Personal",
     role: "Diseñador Gráfico",
     tools: ["Clip Studio Paint"],
     details: "Ilustraciones creadas para esta misma página.",
     galleryImages: [
-      lockedImg
+      portfolioWebImg,
+      erGatoImg
     ],
     barcodeColors: ["#2c3e50", "#34495e", "#7f8c8d", "#95a5a6", "#bdc3c7"]
+  },
+  {
+    id: 18,
+    title: "Concept",
+    category: "Diseño Editorial",
+    categories: ["Diseño Editorial"],
+    image: conceptPortadaImg,
+    year: "2025",
+    client: "Proyecto Profesional",
+    role: "Diseñador Gráfico",
+    tools: ["Adobe InDesign", "Adobe Photoshop"],
+    details: "Maquetación de revista científica en la que se detallan varios TFGs de alumnos del año 2025 para la escuela de arte y diseño ESADA.",
+    galleryImages: [
+      conceptPortadaImg,
+      conceptImg1,
+      conceptImg2,
+      conceptImg3
+    ],
+    barcodeColors: ["#1a1a1a", "#4a4a4a", "#8a8a8a", "#d4c9b8", "#f5f0e8"]
   }
 ];
 
@@ -992,6 +1017,10 @@ export function Portfolio() {
                     ? 'bg-black'
                     : selectedProject.id === 9
                     ? 'aspect-auto pb-8 md:pb-12 bg-white'
+                    : selectedProject.id === 17
+                    ? 'aspect-auto pb-8 md:pb-12 bg-white'
+                    : selectedProject.id === 18
+                    ? 'aspect-auto pb-8 md:pb-12 bg-white'
                     : 'aspect-video md:aspect-[21/9] bg-gray-100'
                 }`}>
                   {selectedProject.videoUrl ? (
@@ -1025,6 +1054,10 @@ export function Portfolio() {
                             : selectedProject.id === 6
                             ? 'w-full h-auto object-contain'
                             : selectedProject.id === 9
+                            ? 'w-full h-auto object-contain'
+                            : selectedProject.id === 17
+                            ? 'w-full h-auto object-contain'
+                            : selectedProject.id === 18
                             ? 'w-full h-auto object-contain'
                             : 'w-full h-full object-cover')
                         }
