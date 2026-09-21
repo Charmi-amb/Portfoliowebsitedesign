@@ -1,10 +1,11 @@
-import { Palette, Sparkles, Layers, Award, Coffee, Heart, Plus, Circle, Square, Globe, Zap, Star } from "lucide-react";
+import { Palette, Sparkles, Layers, Award, Coffee, Heart, Plus, Circle, Square, Globe, Zap, Star, Download } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ValueCarousel } from "../components/ValueCarousel";
+import fotoPerfil from "../../imports/Foto_Perfil.jpg";
 import heroImage from "figma:asset/e60d2b83fd6a8e4022f566e8943fc69bfa26c445.png";
 
 export function Home() {
@@ -171,7 +172,7 @@ export function Home() {
               animate={{ opacity: [1, 0.6, 1] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
-              2025
+              2026
             </motion.div>
             <motion.div 
               className="mt-1 text-sm md:text-base"
@@ -253,7 +254,7 @@ export function Home() {
                 <span className="text-[#e70059]">✕</span>
                 <span className="tracking-[0.1em] md:tracking-[0.2em]">PORTFOLIO</span>
                 <span className="text-[#e70059]">✱</span>
-                <span className="bg-[#e70059] text-white px-3 md:px-4 py-1.5 tracking-[0.1em] md:tracking-[0.2em]">2024</span>
+                <span className="bg-[#e70059] text-white px-3 md:px-4 py-1.5 tracking-[0.1em] md:tracking-[0.2em]">2026</span>
                 <span className="text-[#e70059]">✕</span>
                 <span className="tracking-[0.1em] md:tracking-[0.2em]">デザイン</span>
               </div>
@@ -278,17 +279,30 @@ export function Home() {
                 }}
               >
                 <div className="mb-8">
-                  <h3 className="text-2xl md:text-3xl mb-4 tracking-tight">Embracing Comfort with Style</h3>
+                  <h3 className="text-2xl md:text-3xl mb-4 tracking-tight">La destreza del libre albedrío</h3>
                   
                   <div className="space-y-4 text-sm leading-relaxed">
                     <p className="text-gray-800">
-                      Desde pequeño, el arte y el diseño han sido mi forma de expresión. Lo que comenzó como 
-                      un pasatiempo se convirtió en mi carrera y pasión. Me especializo en crear piezas visuales 
-                      que no solo captan la atención, sino que comunican mensajes poderosos.
+                      Como bien pone arriba en letras gigantes, mi nombre es Alejandro Molina Barnés, o también apodado Charmi
+                      cariñosamente en referencia a cierto pokemon de fuego. Esa era la premisa inicial, a la cual le he dado muchas
+                      vueltas a lo largo de mi educación como diseñador gráfico hasta dar con la imagen que ahora veis aquí: Charmi, Charumi, チャルミ.
                     </p>
                     <p className="text-gray-800">
-                      Con más de 5 años de experiencia, he tenido el privilegio de trabajar con clientes increíbles, 
-                      desde emprendedores soñadores hasta empresas consolidadas.
+                      Realmente da igual cómo la pronunciéis y ese es el centro de mi trabajo, de mi ser. ¿Qué es el diseño? Cada uno tiene una
+                      definición para esta palabra y la verdad es que todas son correctas. El diseño es el arte de crear algo desde un punto de
+                      vista único que da solución a un problema surgido. A eso yo lo conozco como tener la destreza para expresar tu libre albedrío,
+                      de tener un criterio propio entre tantos otros del que nace una creación. Así nacieron todos los proyectos que podéis ver en
+                      mi página, soluciones aplicadas a dudas que en algún momento brotaron. Algunas acompañado, otras solitario, todas ellas resueltas.
+                    </p>
+                    <p className="text-gray-800">
+                      Sentíos libres de explorar mis ideas tanto como lo hice yo en su momento, además por aquí debajo podréis ver también más detalles
+                      sobre mi trayectoria en una copia digital de mi portafolio por si necesitáis un trocito de Charmi que os acompañe.
+                    </p>
+                    <p className="text-gray-800">
+                      Gracias por leer este pequeño fragmento de mis pensamientos:
+                    </p>
+                    <p className="text-[#e70059]">
+                      No dejemos nunca de ser nosotros mismos. ~
                     </p>
                   </div>
                 </div>
@@ -301,6 +315,13 @@ export function Home() {
                     ))}
                   </div>
                   <span className="text-[#e70059]">✤</span>
+                  <button
+                      onClick={() => {}}
+                      className="flex items-center gap-2 border-2 border-[#e70059] text-[#e70059] px-4 py-2 text-sm hover:bg-[#e70059] hover:text-white transition-colors"
+                  >
+                    <Download className="w-4 h-4" />
+                    Descargar CV + Portafolio
+                  </button>
                 </div>
               </motion.div>
 
@@ -335,8 +356,8 @@ export function Home() {
                 />
                 <div className="absolute -top-4 -right-4 w-full h-full border-4 border-black z-0"></div>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1642609026456-834be953090e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbmVyJTIwcG9ydHJhaXQlMjB0cmFuc3BhcmVudHxlbnwxfHx8fDE3NjM1NjU0NjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Designer"
+                  src={fotoPerfil}
+                  alt="Alejandro"
                   className="w-full relative z-10"
                 />
               </motion.div>
@@ -403,7 +424,7 @@ export function Home() {
               <div className="flex items-center justify-center gap-3 mb-6 text-xs">
                 <span className="text-[#e70059]">✱</span>
                 <span className="tracking-[0.3em]">VALUES</span>
-                <span className="px-3 py-1 bg-white text-black">2024</span>
+                <span className="px-3 py-1 bg-white text-black">2026</span>
                 <span className="tracking-[0.3em]">価値観</span>
                 <span className="text-[#e70059]">✱</span>
               </div>
